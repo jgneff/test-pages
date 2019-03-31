@@ -1,5 +1,5 @@
 ---
-title: Test Pages
+layout: default
 ---
 
 # Test Pages
