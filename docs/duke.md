@@ -1,3 +1,7 @@
+---
+title: Duke Waving
+---
+
 # Duke Waving
 
 Below is a video of Duke, the Java mascot, waving.

@@ -1,3 +1,7 @@
+---
+title: Test Pages
+---
+
 # Test Pages
 
 Below is a video of Duke, the Java mascot, waving.
