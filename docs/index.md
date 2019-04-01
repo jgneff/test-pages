@@ -1,6 +1,11 @@
+---
+title: Test Pages
+---
 # Test Pages
 
 Testing a [relative link](duke.md) to the file *duke.md*, which should get converted to *duke.html*.
+
+Testing a [direct link](duke.html) to the *duke.html* page.
 
 Inline-style links:
 
