@@ -1,3 +1,6 @@
 theme: jekyll-theme-slate
 title: Test GitHub Pages
 description: A repository to test GitHub Pages
+relative_links:
+  enabled:     true
+  collections: false
