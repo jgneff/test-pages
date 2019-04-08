@@ -1,2 +1,6 @@
 title: Test GitHub Pages
 description: A repository to test GitHub Pages
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

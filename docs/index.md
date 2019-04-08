@@ -6,6 +6,38 @@ title: Test Pages
 
 Testing a [direct link](duke.html) to the *duke.html* page.
 
+Let's add some Java code:
+
+```java
+@Override
+public void handle(long now) {
+    view.setImage(ImageUtils.toFXImage(awtList.get(index), jfxImage));
+    index = patrol ? nextPatrolCycle() : nextLoopCycle();
+}
+```
+
+Others:
+
+```shell
+john@t3420:~/src/github/gif-doll$ /snap/bin/ffmpeg -ss 3:59 \
+    -i src/Mechanical_Doll_1922.webm -i src/bilevel-palette.png \
+    -filter_complex "decimate=cycle=5,trim=start_frame=13:end_frame=373,\
+    framestep=step=2,setpts=N/(12*TB),vignette=angle=PI/12:mode=backward,\
+    scale=800x600:flags=lanczos [x]; [x][1:v] paletteuse=dither=none" -y doll-dancing.odd.gif
+```
+
+```python
+print("Hello World")
+```
+
+```ruby
+puts 'Hello World'
+```
+
+```c
+printf("Hello World");
+```
+
 Inline-style links:
 
 | Video | Description |
@@ -27,13 +59,3 @@ Reference-style image and links:
 [1]: duke.html
 [2]: duke.html
 [waving]: images/duke-2019-03-22-180.png
-
-Let's add some Java code:
-
-```Java
-@Override
-public void handle(long now) {
-    view.setImage(ImageUtils.toFXImage(awtList.get(index), jfxImage));
-    index = patrol ? nextPatrolCycle() : nextLoopCycle();
-}
-```
