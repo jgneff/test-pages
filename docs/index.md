@@ -27,3 +27,13 @@ Reference-style image and links:
 [1]: duke.html
 [2]: duke.html
 [waving]: images/duke-2019-03-22-180.png
+
+Let's add some Java code:
+
+```Java
+@Override
+public void handle(long now) {
+    view.setImage(ImageUtils.toFXImage(awtList.get(index), jfxImage));
+    index = patrol ? nextPatrolCycle() : nextLoopCycle();
+}
+```
