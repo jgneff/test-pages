@@ -1,6 +1,16 @@
 title: Test GitHub Pages
 description: A repository to test GitHub Pages
 markdown: kramdown
+sass:
+  style: :compressed
+
+# Sets GitHub defaults (except theme)
+# https://help.github.com/en/articles/configuring-jekyll
+github: [metadata]
+encoding: "utf-8"
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  hard_wrap: false
+future: true
+jailed: false
+gfm_quirks: paragraph_end

@@ -2,7 +2,7 @@
 layout: default
 title: Test Pages
 ---
-## Test Pages
+# Test Pages
 
 Testing a [direct link](duke.html) to the *duke.html* page.
 
@@ -18,8 +18,8 @@ public void handle(long now) {
 
 Others:
 
-```shell
-john@t3420:~/src/github/gif-doll$ /snap/bin/ffmpeg -ss 3:59 \
+```bash
+$ /snap/bin/ffmpeg -ss 3:59 \
     -i src/Mechanical_Doll_1922.webm -i src/bilevel-palette.png \
     -filter_complex "decimate=cycle=5,trim=start_frame=13:end_frame=373,\
     framestep=step=2,setpts=N/(12*TB),vignette=angle=PI/12:mode=backward,\
@@ -42,13 +42,13 @@ Inline-style links:
 
 | Video | Description |
 |:-----:|:------------|
-| [![Duke Waving](images/duke-2019-03-22-180.png)](duke.html) | Video of [Duke, the Java mascot, waving](duke.html) |
+| [![Duke Waving](images/duke-2019-03-22-180.png){:width="320" height="180"}](duke.html) | Video of [Duke, the Java mascot, waving](duke.html) |
 
 Reference-style links:
 
 | Video | Description |
 |:-----:|:------------|
-| [![Duke Waving](images/duke-2019-03-22-180.png)][1] | Video of [Duke, the Java mascot, waving][2] |
+| [![Duke Waving](images/duke-2019-03-22-180.png){:width="320" height="180"}][1] | Video of [Duke, the Java mascot, waving][2] |
 
 Reference-style image and links:
 
@@ -59,3 +59,4 @@ Reference-style image and links:
 [1]: duke.html
 [2]: duke.html
 [waving]: images/duke-2019-03-22-180.png
+{: width="320" height="180"}
