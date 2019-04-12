@@ -26,7 +26,7 @@ $$
 \end{align}
 $$
 
-Others:
+Bash:
 
 ```bash
 $ /snap/bin/ffmpeg -ss 3:59 \
@@ -35,6 +35,18 @@ $ /snap/bin/ffmpeg -ss 3:59 \
     framestep=step=2,setpts=N/(12*TB),vignette=angle=PI/12:mode=backward,\
     scale=800x600:flags=lanczos [x]; [x][1:v] paletteuse=dither=none" -y doll-dancing.odd.gif
 ```
+
+Console:
+
+```console
+$ /snap/bin/ffmpeg -ss 3:59 \
+    -i src/Mechanical_Doll_1922.webm -i src/bilevel-palette.png \
+    -filter_complex "decimate=cycle=5,trim=start_frame=13:end_frame=373,\
+    framestep=step=2,setpts=N/(12*TB),vignette=angle=PI/12:mode=backward,\
+    scale=800x600:flags=lanczos [x]; [x][1:v] paletteuse=dither=none" -y doll-dancing.odd.gif
+```
+
+Others:
 
 ```python
 print("Hello World")
