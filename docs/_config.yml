@@ -1,16 +1,23 @@
+# Site variables
 title: Test GitHub Pages
 description: A repository to test GitHub Pages
+
+# Conversion
 markdown: kramdown
+highlighter: rouge
+
+# Sass/SCSS
 sass:
   style: :compressed
 
-# Sets GitHub defaults (except theme)
-# https://help.github.com/en/articles/configuring-jekyll
+# GitHub defaults (except theme)
 github: [metadata]
 encoding: "utf-8"
 kramdown:
   input: GFM
   hard_wrap: false
+  math_engine: mathjax
+  syntax_highlighter: rouge
 future: true
 jailed: false
 gfm_quirks: paragraph_end
