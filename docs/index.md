@@ -11,24 +11,15 @@ Let's add some Java code:
 ```java
 @Override
 public void handle(long now) {
+    // This is a comment
     view.setImage(ImageUtils.toFXImage(awtList.get(index), jfxImage));
     index = patrol ? nextPatrolCycle() : nextLoopCycle();
 }
 ```
 
-And now let's add some math:
+Shell:
 
-$$
-\begin{align}
-\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
-\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
-\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
-\end{align}
-$$
-
-Bash:
-
-```bash
+```shell
 $ /snap/bin/ffmpeg -ss 3:59 \
     -i src/Mechanical_Doll_1922.webm -i src/bilevel-palette.png \
     -filter_complex "decimate=cycle=5,trim=start_frame=13:end_frame=373,\
@@ -46,7 +37,7 @@ $ /snap/bin/ffmpeg -ss 3:59 \
     scale=800x600:flags=lanczos [x]; [x][1:v] paletteuse=dither=none" -y doll-dancing.odd.gif
 ```
 
-Others:
+Others (Python, Ruby, and C):
 
 ```python
 print("Hello World")
