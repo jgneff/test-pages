@@ -2,9 +2,9 @@
 # Creates the CSS file for a Pygments theme
 # https://pygments.org/docs/cmdline/
 
-# To list themes: pygmentize -L styles
+# List themes with: pygmentize -L styles
 theme=vs
 
-output=docs/styles/pygments-${theme}.scss
-printf "%s\n%s\n" "---" "---" > $output
-pygmentize -S $theme -f html -a .highlight >> $output
+output=docs/_sass/pygments-${theme}.scss
+pygmentize -S $theme -f html -a .highlight \
+   | sed '/.highlight  {/d' > $output

@@ -1,75 +1,47 @@
 ---
 layout: default
-title: Test Pages
+title: Example
+author: John Neffenger
+description: Example page from Wikipedia
 ---
-# Test Pages
+Heading
+=======
 
-Testing a [direct link](duke.html) to the *duke.html* page.
+Sub-heading
+-----------
 
-Let's add some Java code:
+Paragraphs are separated
+by a blank line.
 
-```java
-@Override
-public void handle(long now) {
-    // This is a comment
-    view.setImage(ImageUtils.toFXImage(awtList.get(index), jfxImage));
-    index = patrol ? nextPatrolCycle() : nextLoopCycle();
-}
-```
+Two spaces at the end of a line  
+produces a line break.
 
-Shell:
+Text attributes _italic_,
+**bold**, `monospace`.
 
-```shell
-$ /snap/bin/ffmpeg -ss 3:59 \
-    -i src/Mechanical_Doll_1922.webm -i src/bilevel-palette.png \
-    -filter_complex "decimate=cycle=5,trim=start_frame=13:end_frame=373,\
-    framestep=step=2,setpts=N/(12*TB),vignette=angle=PI/12:mode=backward,\
-    scale=800x600:flags=lanczos [x]; [x][1:v] paletteuse=dither=none" -y doll-dancing.odd.gif
-```
+Horizontal rule:
 
-Console:
+---
 
-```console
-$ /snap/bin/ffmpeg -ss 3:59 \
-    -i src/Mechanical_Doll_1922.webm -i src/bilevel-palette.png \
-    -filter_complex "decimate=cycle=5,trim=start_frame=13:end_frame=373,\
-    framestep=step=2,setpts=N/(12*TB),vignette=angle=PI/12:mode=backward,\
-    scale=800x600:flags=lanczos [x]; [x][1:v] paletteuse=dither=none" -y doll-dancing.odd.gif
-```
+Strikethrough:
+~~strikethrough~~
 
-Others (Python, Ruby, and C):
+Bullet list:
 
-```python
-print("Hello World")
-```
+  * apples
+  * oranges
+  * pears
 
-```ruby
-puts 'Hello World'
-```
+Numbered list:
 
-```c
-printf("Hello World");
-```
+  1. lather
+  2. rinse
+  3. repeat
 
-Inline-style links:
+A link to the [Water.css](water.html) demo page.
 
-| Video | Description |
-|:-----:|:------------|
-| [![Duke Waving](images/duke-2019-03-22-180.png){:width="320" height="180"}](duke.html) | Video of [Duke, the Java mascot, waving](duke.html) |
+![Image](images/Icon-pictures.png "icon")
 
-Reference-style links:
+> Markdown uses email-style > characters for blockquoting.
 
-| Video | Description |
-|:-----:|:------------|
-| [![Duke Waving](images/duke-2019-03-22-180.png){:width="320" height="180"}][1] | Video of [Duke, the Java mascot, waving][2] |
-
-Reference-style image and links:
-
-| Video | Description |
-|:-----:|:------------|
-| [![Duke Waving][waving]][1] | Video of [Duke, the Java mascot, waving][2] |
-
-[1]: duke.html
-[2]: duke.html
-[waving]: images/duke-2019-03-22-180.png
-{: width="320" height="180"}
+Inline <abbr title="Hypertext Markup Language">HTML</abbr> is supported.
