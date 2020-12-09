@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="72" height="72" xmlns="http://www.w3.org/2000/svg">
-<style>@media (prefers-color-scheme: dark) {image {filter: invert(1)}}</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  image {filter: drop-shadow(0px -2px 4px white)}
+}
+</style>
 <image width="72" height="72" href="data:image/png;base64,
 iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACHFBMVEUAAACQkIhwaGA4KDAo
