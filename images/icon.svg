@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72" height="72" xmlns="http://www.w3.org/2000/svg">
+<style>
+@media (prefers-color-scheme: dark) {image {filter: invert(1)}}
+</style>
+<image href="icon.png" width="72" height="72"/>
+</svg>
